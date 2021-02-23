@@ -1,28 +1,35 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
-  </div>
+  <v-app>
+    <DashboardLayout />
+  </v-app>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
+import DashboardLayout from "@/components/DashboardLayout";
 export default {
   name: 'App',
-  components: {
-    HelloWorld
+  components:{
+    DashboardLayout
   }
-}
+};
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+.view-leave-active {
+  transition: opacity 0.5s ease-in-out, transform 0.5s ease;
 }
+
+.view-enter-active {
+  transition: opacity 0.5s ease-in-out, transform 0.5s ease;
+  transition-delay: 0.5s;
+}
+
+.view-enter, .view-leave-to {
+  opacity: 0;
+}
+
+.view-enter-to, .view-leave {
+  opacity: 1;
+}
+
 </style>
