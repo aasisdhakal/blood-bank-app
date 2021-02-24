@@ -17,16 +17,10 @@ Vue.use(VueAxios, axios)
 
 axios.defaults.baseURL = process.env.VUE_APP_API_URL;
 
-let instance = Vue.$toast.open('You did it!');
-
-// Force dismiss specific toast
-instance.dismiss();
-// Dismiss all opened toast immediately
-Vue.$toast.clear();
 const router = new Router({
-    mode: 'history',
-    routes:routes
-}
+        mode: 'history',
+        routes:routes
+    }
 )
 
 new Vue({
