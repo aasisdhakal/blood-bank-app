@@ -40,7 +40,9 @@
     </v-app-bar>
 
     <v-main>
+      <transition name="view">
         <router-view class="view"></router-view>
+      </transition>
     </v-main>
   </v-app>
 </template>
