@@ -1,4 +1,4 @@
-# ::computer: BLOOD BANK APP :iphone:
+# :computer: BLOOD BANK APP :iphone:
 
 # Project Brief
 
